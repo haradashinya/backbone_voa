@@ -1,0 +1,23 @@
+.thumb-list
+{
+	display: inline;
+}
+.thumb
+{
+	width:130px;
+	height:130px;
+	margin-top: 5px;
+	padding-right: 2.5px ;
+	cursor: pointer;
+}
+.thumb:hover {
+	opacity: 0.8;
+}
+
+.current-img
+{
+	width:402px;
+	height:402px;
+}
+
+

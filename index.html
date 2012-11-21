@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+	<head>
+	<title></title>
+		<link rel="stylesheet" href="css/bootstrap-responsive.css"/>
+		<link rel="stylesheet" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="css/layout.css"/>
+		<link rel="stylesheet" href="css/album.css"/>
+		<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, maximum-scale=1.2,user-scalable=no" />
+
+
+	</head>
+	<body id="app">
+
+	<!--index page-->
+	<!--show all videos-->
+	<ul id="videos" class="unstyled"></ul>
+	<!--end-->
+
+<!--detail page-->
+	<div id="detail">
+				<!-- <h1 class="video-title italics"></h1> -->
+				<div id="video-img"></div>
+				<div id="desc"></div>
+	</div>
+<!--end-->
+
+
+	<script id="videos-template" type="text/template">
+		<div class="videos unstyled">
+		</div>
+	</script>
+
+
+	<script id="video-li-template" type="text/template">
+		<div class="row-fluid video-li">
+			<div class="span4">
+				<%= src %>
+			</div>
+			<div class="span8 off">
+				<pre><a href= "#/videos/<%= _id %>" class="video-li-title"><%= title %></a></pre>
+				<!-- <p class="date"><%= published %></p> -->
+			</div>
+		</div>
+	</script>
+
+	<script id="detail-template" type="text/template">
+		<div class="description bold">
+			<% if (currentDescription){ %>
+			<p><b><%= currentDescription %></b></p>
+			<% };%>
+		</div>
+	</script>
+
+
+	<script src="lib/zepto.min.js"></script>
+	<script src="lib/hammer.js"></script>
+	<script src="lib/underscore/underscore.js"></script>
+	<script src="lib/backbone/backbone.js"></script>
+	<script src="lib/bootstrap/bootstrap.min.js"></script>
+	<script src="models/video.js"></script>
+	<script src="collections/video_collection.js"></script>
+	<script src="views/video_collection_view.js"></script>
+	<script src="views/video_view.js"></script>
+	<script src="views/detail_view.js"></script>
+	<script src="routes.js"></script>
+	<script type="text/javascript"><!--
+		google_ad_client = "ca-pub-0004560833257704";
+		/* translator for android */
+		google_ad_slot = "7663790789";
+		google_ad_width = 320;
+		google_ad_height = 50;
+//-->
+</script>
+<script type="text/javascript"
+		src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
