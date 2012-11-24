@@ -5,7 +5,7 @@ window.Video = Backbone.Model.extend({
         en:""
     },
 
-    baseUrl:"http://www20402ue.sakura.ne.jp:9000/",
+		baseUrl:"http://floating-ocean-1849.herokuapp.com/",
 
     formatUrl:function(id){
         return this.baseUrl + id + ".json";

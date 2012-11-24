@@ -10,11 +10,6 @@ window.VideoView = Backbone.View.extend({
             _id: model.get("_id"),
             published: model.get("published")
         });
-
-
-
-
-
 			return base;
 	},
     render:function(){

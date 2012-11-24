@@ -27,6 +27,9 @@ window.DetailView = Backbone.View.extend({
 					self.toggleDescription();
 				}
 			});
+			this.$el.bind("click",function(e){
+				self.toggleDescription();
+			});
 		},
 
     events:{

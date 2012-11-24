@@ -1,5 +1,5 @@
 window.VideoCollection = Backbone.Collection.extend({
-	url:"http://www20402ue.sakura.ne.jp:9000/videos.json",
+	url:"http://floating-ocean-1849.herokuapp.com/videos.json",
 	model: window.Video,
 	initialize:function(){
 	},
